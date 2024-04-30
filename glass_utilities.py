@@ -1,4 +1,5 @@
 from typing import Tuple
+# from glass import *
 from neural import *
 
 def parse_line(line: str) -> Tuple[List[float], List[float]]:
@@ -11,8 +12,11 @@ def parse_line(line: str) -> Tuple[List[float], List[float]]:
         tuple of input list and output list
     """
     tokens = line.split(",")
-    out = int(tokens[0])
-    output = [0 if out == 1 else 0.5 if out == 2 else 1]
+    out = int(tokens[10]) # Original Value: 0
+    # Attempted remade output
+    output = [0 if out == 1 else 0.17 if out == 2 else 0.33 if out == 3 else 0.50 if out == 5 else 0.67 if out == 6 else 0.83 if out == 7 else 1]# 7 Targets
+    # Output for wine data
+    # output = [0 if out == 1 else 0.5 if out == 2 else 1]
 
     inpt = [float(x) for x in tokens[1:]]
     return (inpt, output)
