@@ -14,7 +14,7 @@ def parse_line(line: str) -> Tuple[List[float], List[float]]:
     tokens = line.split(",")
     out = int(tokens[10]) # Original Value: 0
     # Attempted remade output
-    output = [0 if out == 1 else 0.17 if out == 2 else 0.33 if out == 3 else 0.50 if out == 5 else 0.67 if out == 6 else 0.83 if out == 7 else 1]# 7 Targets
+    output = [0 if out == 1 else 0.2 if out == 2 else 0.4 if out == 3 else 0.6 if out == 5 else 0.8 if out == 6 else 1 if out == 7 else 1]# 7 Targets
     # Output for wine data
     # output = [0 if out == 1 else 0.5 if out == 2 else 1]
 
