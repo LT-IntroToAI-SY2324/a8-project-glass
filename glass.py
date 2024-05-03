@@ -16,7 +16,8 @@ nn = NeuralNet(10, 6, 1)
 nn.train(train, iters = 10000, print_interval = 1000, learning_rate = 0.2)
 
 print(" ")
-print("Types of glass: 0 = Building Windows(Float Processed), 0.2 = Building Windows(Non-Float Processed), 0.4 = Vehicle Windows(Float Processed), 0.6 = Containers, 0.8 = Tableware, 1 = Headlamps")
+print("Types of glass: 0 = Building Windows(Float Processed), 0.2 = Building Windows(Non-Float Processed), 0.4 = Vehicle Windows(Float Processed),")
+print("0.6 = Containers, 0.8 = Tableware, 1 = Headlamps")
 print(" ")
 
 for i in nn.test_with_expected(test):
