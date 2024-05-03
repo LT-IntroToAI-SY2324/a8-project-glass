@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import List, Tuple, Any
 # from glass import *
 from neural import *
 
@@ -46,3 +46,4 @@ def normalize(data: List[Tuple[List[float], List[float]]]):
         for j in range(len(data[i][0])):
             data[i][0][j] = (data[i][0][j] - leasts[j]) / (mosts[j] - leasts[j])
     return data
+
