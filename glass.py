@@ -3,6 +3,8 @@ from glass_utilities import *
 from neural import *
 from sklearn.model_selection import train_test_split
 
+# Members of Glass group: Joaquin L.
+
 with open ("glass.data", "r") as f:
     training_data = [parse_line(line) for line in f.readlines() if len(line) > 8]
 
